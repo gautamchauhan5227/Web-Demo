@@ -34,6 +34,15 @@ class _LoginPageState extends State<LoginPage> {
       child: ListView(
         children: [
           SizedBox(
+            height: MediaQuery.of(context).size.height * 0.1,
+            child: FittedBox(
+              child: Text(
+                'Welcome',
+                style: TextStyle(fontSize: 30),
+              ),
+            ),
+          ),
+          SizedBox(
             height: MediaQuery.of(context).size.height * 0.19,
           ),
           Padding(
@@ -79,12 +88,14 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget titleText() {
-    return Text(
-      strings.title,
-      style: TextStyle(
-        color: Colors.white,
-        fontSize: 24,
-        fontWeight: FontWeight.w700,
+    return FittedBox(
+      child: Text(
+        strings.title,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 24,
+          fontWeight: FontWeight.w700,
+        ),
       ),
     );
   }

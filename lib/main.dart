@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_demo/Screen/Line_Chart.dart';
 import 'package:web_demo/Screen/Login_Screen.dart';
 
 void main() {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: MyHomePage(),
     );
   }
 }
